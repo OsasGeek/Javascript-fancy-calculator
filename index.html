@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Javascript Calculator</title>
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="mt-4 bg-slate-600">
+  <div class="bg-white dark:bg-slate-950 rounded-lg p-3 ring-1 ring-slate-900/5 shadow-xl w-80 mr-auto ml-auto">
+    <div class="flex justify-end">
+      <span class="inline-flex items-center text-left p-0 bg-white rounded-full shadow-lg">
+        <a href="https://github.com/OsasGeek/Javascript-fancy-calculator" target="_blank" rel="noopener">
+          <img src="/src/github.png" alt="github" />
+        </a>
+      </span>
+    </div>
+    <div class="p-3">
+       <div class="h-20 text-right mb-6">
+        <label class="text-sm text-cyan-100">Input goes in here
+          <input type="text" value="" readonly maxlength="21" class="text-2xl w-full text-blue-200 block mb-1 bg-transparent outline-0 cursor-default text-right" id="logic">
+        </label>
+          <span class="text-3xl text-white block max-w-full mb-2" id="output">0</span>
+       </div>
+        <div class="flex justify-between flex-wrap max-w-full">
+            <div class="w-3/4"> 
+            <button class=" p-3 rounded-xl text-lg  bg-neutral-900  text-red-700 font-bold shadow-xl w-14 h-14 m-1" onclick="ac()">AC</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-800 text-blue-400  font-bold shadow-xl w-14 h-14 m-1" onclick="divide()">&#247</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-800  text-blue-400  font-bold shadow-xl w-14 h-14 m-1" onclick="multiply()">x</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberSeven()">7</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="Eight()">8</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberNine()">9</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberFour()">4</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberFive()">5</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberSix()">6</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberOne()">1</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberTwo()">2</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberThree()">3</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberCurll()">(</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberZero()">0</button>
+            <button class=" p-3 rounded-xl text-lg  bg-slate-600 text-white font-bold shadow-xl w-14 h-14 m-1" onclick="numberCurlr()">)</button>
+        </div>
+        <div class="w-1/4 h-max">
+          <button class=" p-3 rounded-xl text-lg  bg-slate-800 text-blue-400  font-bold shadow-xl w-16 h-14 m-1 mr-0" onclick="deleteCha()">DEL</button>
+          <button class=" p-3 rounded-xl text-lg  bg-slate-800 text-blue-400  font-bold shadow-xl w-16 h-14 m-1" onclick="plus()">+</button>
+          <button class=" p-3 rounded-xl text-lg  bg-slate-800 text-blue-400 font-bold shadow-xl w-16 h-14 m-1 mb-3" onclick="minus()">-</button>
+          <button class=" p-3 rounded-xl text-lg  bg-neutral-900 text-white font-bold shadow-xl w-16 h-28 m-1" onclick="displayResult()">=</button>
+        </div>
+      </div>  
+        <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Few Logic Calculator</h3>
+        <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+          This Calculator was built using very basic Javascript logic.
+        </p>
+    </div>
+  </div>
+  <script src="/src/index.js"></script>
+</body>
+</html>
